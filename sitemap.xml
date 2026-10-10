@@ -38,4 +38,29 @@
     <lastmod>2026-10-06</lastmod>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://apsideslabs.github.io/posts/cpu-only-ai-default.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://apsideslabs.github.io/posts/dictionary-for-an-ignored-language.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://apsideslabs.github.io/posts/static-sites-outlive-frameworks.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://apsideslabs.github.io/posts/evaluating-small-models.html</loc>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://apsideslabs.github.io/posts/teaching-a-script.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>

@@ -39,5 +39,45 @@
       <pubDate>Tue, 06 Oct 2026 09:00:00 +0000</pubDate>
       <description>Most of the world's learners are not on a fast, always-on connection. Designing for the lowest common denominator makes learning software better for everyone.</description>
     </item>
+    <item>
+      <title>Why CPU-only AI is the right default for learning software</title>
+      <link>https://apsideslabs.github.io/posts/cpu-only-ai-default.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/posts/cpu-only-ai-default.html</guid>
+      <category>Engineering</category>
+      <pubDate>5 Oct 2026 09:00:00 +0000</pubDate>
+      <description>GPUs are fast and expensive. For the software most learners actually use, a small model on a CPU is the better trade.</description>
+    </item>
+    <item>
+      <title>Building a dictionary for a language the web ignores</title>
+      <link>https://apsideslabs.github.io/posts/dictionary-for-an-ignored-language.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/posts/dictionary-for-an-ignored-language.html</guid>
+      <category>Education</category>
+      <pubDate>3 Oct 2026 09:00:00 +0000</pubDate>
+      <description>348 words, one static page, no backend. What it takes to give a low-resource language a real learning tool.</description>
+    </item>
+    <item>
+      <title>Static sites outlive their frameworks</title>
+      <link>https://apsideslabs.github.io/posts/static-sites-outlive-frameworks.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/posts/static-sites-outlive-frameworks.html</guid>
+      <category>Engineering</category>
+      <pubDate>1 Oct 2026 09:00:00 +0000</pubDate>
+      <description>We ship plain HTML that runs anywhere and needs no build. Here is why that is a feature, not nostalgia.</description>
+    </item>
+    <item>
+      <title>Evaluating small models honestly</title>
+      <link>https://apsideslabs.github.io/posts/evaluating-small-models.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/posts/evaluating-small-models.html</guid>
+      <category>AI</category>
+      <pubDate>29 Sep 2026 09:00:00 +0000</pubDate>
+      <description>Published benchmarks will not tell you whether a 1B model is good enough for your task. A short, practical method that will.</description>
+    </item>
+    <item>
+      <title>Teaching a script, not just a language</title>
+      <link>https://apsideslabs.github.io/posts/teaching-a-script.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/posts/teaching-a-script.html</guid>
+      <category>Education</category>
+      <pubDate>26 Sep 2026 09:00:00 +0000</pubDate>
+      <description>Learning Assamese or Bodo means learning a script. What we changed after watching people try.</description>
+    </item>
   </channel>
 </rss>

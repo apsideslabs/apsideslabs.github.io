@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Static sites outlive their frameworks &mdash; Perigee</title>
+<meta name="description" content="We ship plain HTML that runs anywhere and needs no build. Here is why that is a feature, not nostalgia.">
+<link rel="canonical" href="https://apsideslabs.github.io/posts/static-sites-outlive-frameworks.html">
+<meta name="theme-color" content="#fafaf8">
+<meta name="author" content="Apsides Labs">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="article:published_time" content="2026-10-01">
+<meta property="article:section" content="Engineering">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Perigee">
+<meta property="og:title" content="Static sites outlive their frameworks">
+<meta property="og:description" content="We ship plain HTML that runs anywhere and needs no build. Here is why that is a feature, not nostalgia.">
+<meta property="og:url" content="https://apsideslabs.github.io/posts/static-sites-outlive-frameworks.html">
+<meta property="og:image" content="https://apsideslabs.github.io/assets/og/static-sites-outlive-frameworks.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Static sites outlive their frameworks">
+<meta name="twitter:description" content="We ship plain HTML that runs anywhere and needs no build. Here is why that is a feature, not nostalgia.">
+<meta name="twitter:image" content="https://apsideslabs.github.io/assets/og/static-sites-outlive-frameworks.png">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+  (function(){try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Static sites outlive their frameworks","description":"We ship plain HTML that runs anywhere and needs no build. Here is why that is a feature, not nostalgia.","datePublished":"2026-10-01","dateModified":"2026-10-01","articleSection":"Engineering","wordCount":700,"author":{"@type":"Organization","name":"Apsides Labs","url":"https://apsideslabs.github.io/"},"publisher":{"@type":"Organization","name":"Apsides Labs","logo":{"@type":"ImageObject","url":"https://apsideslabs.github.io/assets/apsides-labs-logo.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://apsideslabs.github.io/posts/static-sites-outlive-frameworks.html"},"image":"https://apsideslabs.github.io/assets/og/static-sites-outlive-frameworks.png"}
+</script>
+</head>
+<body>
+<div class="progress" data-progress aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" data-pagefind-ignore>
+  <div class="wrap">
+    <a class="brand" href="../index.html"><img class="logo" src="../assets/logo.svg" width="30" height="30" alt="">Perigee</a>
+    <nav class="nav" data-nav aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../search.html">Search</a>
+      <a href="../about.html">Our Company</a>
+      <a href="../feed.xml">RSS</a>
+      <a class="nav-cta" href="https://github.com/apsideslabs" rel="noopener">GitHub</a>
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn" data-theme-toggle type="button" aria-label="Switch to dark theme">
+        <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn menu-toggle" data-menu-toggle type="button" aria-label="Open menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <article class="wrap article" data-article>
+    <header class="article-header">
+      <span class="tag">Engineering</span>
+      <h1>Static sites outlive their frameworks</h1>
+      <p class="dek">We ship plain HTML that runs anywhere and needs no build. Here is why that is a feature, not nostalgia.</p>
+      <div class="article-meta">
+        <span class="avatar" aria-hidden="true">A</span>
+        <span><strong style="color:var(--ink)">Apsides Labs</strong></span>
+        <span>&middot;</span>
+        <time datetime="2026-10-01">1 October 2026</time>
+        <span>&middot;</span>
+        <span>5 min read</span>
+      </div>
+    </header>
+
+    <figure class="post-cover">
+      <img src="../assets/covers/layers.png" width="1200" height="675" alt="Illustration: stacked layers.">
+    </figure>
+
+    <div class="prose">
+      <p>Every few years a framework promises to make the web simple and instead makes it a build pipeline. The site works beautifully — until a dependency is deprecated, a toolchain moves, or the person who understood the config leaves.</p>
+      <p>We keep coming back to plain HTML, CSS and a little JavaScript. Not out of nostalgia, but because it is the only stack we have found that is still working a decade later without anyone tending it.</p>
+
+      <h2>What a build step costs you</h2>
+      <p>A build step is not free. It is a promise that you will keep a toolchain alive: version bumps, security patches, breaking changes, and a CI job that must not rot. That is a real, recurring cost — and it is invisible in the demo and very visible in year three.</p>
+      <ul>
+        <li><strong>Supply chain.</strong> Every dependency is a thing that can be compromised or abandoned.</li>
+        <li><strong>Time to fix.</strong> A typo in a template should take a minute, not a toolchain debug.</li>
+        <li><strong>Longevity.</strong> HTML from 2005 still renders. A config from 2021 may not.</li>
+      </ul>
+
+      <h2>What you give up</h2>
+      <p>Convenience, honestly. No component model, no type-checked templates, no hot reload. On a large application that matters a great deal, and a framework earns its keep. On a content site — which is what most of our work is — it rarely does.</p>
+
+      <h2>The test we use</h2>
+      <p>Before adopting anything, we ask a blunt question: <em>if we stop maintaining this tomorrow, does the site still work?</em> For a static site the answer is yes. For a build-dependent site the answer is usually no, and the site slowly rots in place.</p>
+      <p>That single question has saved us from more complexity than any style guide.</p>
+
+      <div class="callout"><strong>Our default:</strong> static files, no runtime dependencies, no build step where we can avoid it. The web platform is the framework — and it has the best backwards-compatibility record in software.</div>
+
+      <p>Use the tools that earn their cost. But choose the ones that will still be here when you are not.</p>
+    </div>
+
+    <aside class="author-box">
+      <span class="avatar" aria-hidden="true">A</span>
+      <div>
+        <strong>Apsides Labs</strong>
+        <p>An independent research and engineering studio building software that teaches. <a href="../about.html">More about us</a>.</p>
+      </div>
+    </aside>
+
+    <footer class="article-foot">
+      <div class="post-nav">
+        <a href="dictionary-for-an-ignored-language.html"><span class="dir">&larr; Previous</span><span class="t">Building a dictionary for a language the web ignores</span></a>
+        <a class="next" href="evaluating-small-models.html"><span class="dir">Next &rarr;</span><span class="t">Evaluating small models honestly</span></a>
+      </div>
+    </footer>
+  </article>
+</main>
+
+<footer class="site-footer" data-pagefind-ignore>
+  <div class="wrap">
+    <div class="footer-bottom" style="border-top:none">
+      <span>&copy; <span data-year>2026</span> Perigee. Built by Apsides Labs.</span>
+      <span><a href="../index.html">Home</a> &middot; <a href="../blog.html">Blog</a> &middot; <a href="../search.html">Search</a> &middot; <a href="../about.html">Our Company</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/vendor/lenis.min.js" defer></script>
+<script src="../assets/main.js" defer></script>
+<script data-goatcounter="https://YOUR-CODE.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
