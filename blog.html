@@ -23,7 +23,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 <script>
-  (function(){try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();
+  (function(){document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"CollectionPage","name":"Blog — Apsides Labs","url":"https://apsideslabs.github.io/blog.html","isPartOf":{"@type":"WebSite","name":"Apsides Labs","url":"https://apsideslabs.github.io/"}}
@@ -34,7 +34,7 @@
 
 <header class="site-header" data-pagefind-ignore>
   <div class="wrap">
-    <a class="brand" href="index.html"><img class="logo" src="assets/logo.svg" width="30" height="30" alt="">Perigee</a>
+    <a class="brand" href="index.html"><img class="logo" src="assets/logo.svg?v=3" width="30" height="30" alt="">Perigee</a>
     <nav class="nav" data-nav aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="blog.html" aria-current="page">Blog</a>
@@ -81,63 +81,63 @@
 
     <div class="post-grid" data-post-list>
       <article class="post-card" data-post data-title="When AI agents don't stay in their lane" data-tags="ai safety" data-excerpt="Anthropic pulled live internet access from its internal evaluations after its agents exploited real websites.">
-        <img class="card-thumb" src="assets/covers/ai-safety.png" width="1200" height="675" alt="">
+        <img class="card-thumb" src="assets/covers/ai-safety.png?v=3" width="1200" height="675" alt="">
         <div class="card-top"><span class="tag">AI safety</span></div>
         <h3><a href="posts/agents-outside-the-lines.html">When AI agents don't stay in their lane</a></h3>
         <p>Anthropic pulled live internet access from its internal evaluations after its agents exploited real websites. Capability has outrun control.</p>
         <div class="card-foot"><span style="color:var(--faint);font-size:var(--fs-sm)">10 Oct 2026 · 7 min</span><a class="read-more" href="posts/agents-outside-the-lines.html">Read &rarr;</a></div>
       </article>
       <article class="post-card" data-post data-title="The week AI agents became coworkers" data-tags="ai" data-excerpt="Microsoft bills agents by usage, OpenAI ships always-on dots, Anthropic cuts prices.">
-        <img class="card-thumb" src="assets/covers/ai-agents.png" width="1200" height="675" alt="">
+        <img class="card-thumb" src="assets/covers/ai-agents.png?v=3" width="1200" height="675" alt="">
         <div class="card-top"><span class="tag">AI</span></div>
         <h3><a href="posts/agents-at-work.html">The week AI agents became coworkers</a></h3>
         <p>Microsoft bills agents by usage, OpenAI ships always-on "dots", and Anthropic cuts prices. Assistants are becoming workers — and that is a budgeting question.</p>
         <div class="card-foot"><span style="color:var(--faint);font-size:var(--fs-sm)">8 Oct 2026 · 6 min</span><a class="read-more" href="posts/agents-at-work.html">Read &rarr;</a></div>
       </article>
       <article class="post-card" data-post data-title="Capable AI on CPU-only, constrained hosts" data-tags="engineering" data-excerpt="You do not need a GPU cluster to run useful models.">
-        <img class="card-thumb" src="assets/covers/cpu-ai.png" width="1200" height="675" alt="">
+        <img class="card-thumb" src="assets/covers/cpu-ai.png?v=3" width="1200" height="675" alt="">
         <div class="card-top"><span class="tag">Engineering</span></div>
         <h3><a href="posts/capable-ai-on-constrained-hosts.html">Capable AI on CPU-only, constrained hosts</a></h3>
         <p>You do not need a GPU cluster to run useful models. How we ship voice and language models on the hardware people already have.</p>
         <div class="card-foot"><span style="color:var(--faint);font-size:var(--fs-sm)">7 Oct 2026 · 8 min</span><a class="read-more" href="posts/capable-ai-on-constrained-hosts.html">Read &rarr;</a></div>
       </article>
       <article class="post-card" data-post data-title="Why offline-first learning still matters" data-tags="education" data-excerpt="Most of the world's learners are not on a fast, always-on connection.">
-        <img class="card-thumb" src="assets/covers/offline-learning.png" width="1200" height="675" alt="">
+        <img class="card-thumb" src="assets/covers/offline-learning.png?v=3" width="1200" height="675" alt="">
         <div class="card-top"><span class="tag">Education</span></div>
         <h3><a href="posts/offline-first-learning.html">Why offline-first learning still matters</a></h3>
         <p>Most of the world's learners are not on a fast, always-on connection. Designing for the lowest common denominator makes software better for everyone.</p>
         <div class="card-foot"><span style="color:var(--faint);font-size:var(--fs-sm)">6 Oct 2026 · 6 min</span><a class="read-more" href="posts/offline-first-learning.html">Read &rarr;</a></div>
       </article>
       <article class="post-card" data-post data-title="Why CPU-only AI is the right default for learning software" data-tags="engineering" data-excerpt="GPUs are fast and expensive. For the software most learners actually use, a small model on a CPU is the better trade.">
-        <img class="card-thumb" src="assets/covers/device.png" width="1200" height="675" alt="">
+        <img class="card-thumb" src="assets/covers/device.png?v=3" width="1200" height="675" alt="">
         <div class="card-top"><span class="tag">Engineering</span></div>
         <h3><a href="posts/cpu-only-ai-default.html">Why CPU-only AI is the right default for learning software</a></h3>
         <p>GPUs are fast and expensive. For the software most learners actually use, a small model on a CPU is the better trade.</p>
         <div class="card-foot"><span style="color:var(--faint);font-size:var(--fs-sm)">5 Oct 2026 &middot; 6 min</span><a class="read-more" href="posts/cpu-only-ai-default.html">Read &rarr;</a></div>
       </article>
       <article class="post-card" data-post data-title="Building a dictionary for a language the web ignores" data-tags="education" data-excerpt="348 words, one static page, no backend. What it takes to give a low-resource language a real learning tool.">
-        <img class="card-thumb" src="assets/covers/speech.png" width="1200" height="675" alt="">
+        <img class="card-thumb" src="assets/covers/speech.png?v=3" width="1200" height="675" alt="">
         <div class="card-top"><span class="tag">Education</span></div>
         <h3><a href="posts/dictionary-for-an-ignored-language.html">Building a dictionary for a language the web ignores</a></h3>
         <p>348 words, one static page, no backend. What it takes to give a low-resource language a real learning tool.</p>
         <div class="card-foot"><span style="color:var(--faint);font-size:var(--fs-sm)">3 Oct 2026 &middot; 6 min</span><a class="read-more" href="posts/dictionary-for-an-ignored-language.html">Read &rarr;</a></div>
       </article>
       <article class="post-card" data-post data-title="Static sites outlive their frameworks" data-tags="engineering" data-excerpt="We ship plain HTML that runs anywhere and needs no build. Here is why that is a feature, not nostalgia.">
-        <img class="card-thumb" src="assets/covers/layers.png" width="1200" height="675" alt="">
+        <img class="card-thumb" src="assets/covers/layers.png?v=3" width="1200" height="675" alt="">
         <div class="card-top"><span class="tag">Engineering</span></div>
         <h3><a href="posts/static-sites-outlive-frameworks.html">Static sites outlive their frameworks</a></h3>
         <p>We ship plain HTML that runs anywhere and needs no build. Here is why that is a feature, not nostalgia.</p>
         <div class="card-foot"><span style="color:var(--faint);font-size:var(--fs-sm)">1 Oct 2026 &middot; 5 min</span><a class="read-more" href="posts/static-sites-outlive-frameworks.html">Read &rarr;</a></div>
       </article>
       <article class="post-card" data-post data-title="Evaluating small models honestly" data-tags="ai" data-excerpt="Published benchmarks will not tell you whether a 1B model is good enough for your task. A short, practical method that will.">
-        <img class="card-thumb" src="assets/covers/check.png" width="1200" height="675" alt="">
+        <img class="card-thumb" src="assets/covers/check.png?v=3" width="1200" height="675" alt="">
         <div class="card-top"><span class="tag">AI</span></div>
         <h3><a href="posts/evaluating-small-models.html">Evaluating small models honestly</a></h3>
         <p>Published benchmarks will not tell you whether a 1B model is good enough for your task. A short, practical method that will.</p>
         <div class="card-foot"><span style="color:var(--faint);font-size:var(--fs-sm)">29 Sep 2026 &middot; 6 min</span><a class="read-more" href="posts/evaluating-small-models.html">Read &rarr;</a></div>
       </article>
       <article class="post-card" data-post data-title="Teaching a script, not just a language" data-tags="education" data-excerpt="Learning Assamese or Bodo means learning a script. What we changed after watching people try.">
-        <img class="card-thumb" src="assets/covers/writing.png" width="1200" height="675" alt="">
+        <img class="card-thumb" src="assets/covers/writing.png?v=3" width="1200" height="675" alt="">
         <div class="card-top"><span class="tag">Education</span></div>
         <h3><a href="posts/teaching-a-script.html">Teaching a script, not just a language</a></h3>
         <p>Learning Assamese or Bodo means learning a script. What we changed after watching people try.</p>
@@ -152,7 +152,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="index.html"><img class="logo" src="assets/logo.svg" width="30" height="30" alt="">Perigee</a>
+        <a class="brand" href="index.html"><img class="logo" src="assets/logo.svg?v=3" width="30" height="30" alt="">Perigee</a>
         <p>Building thoughtful software, intelligent learning systems, and technology products through research, engineering and experimentation.</p>
       </div>
       <div class="footer-col">
@@ -180,7 +180,7 @@
       </div>
     </div>
     <div class="footer-logo">
-      <img src="assets/apsides-labs-logo.svg" width="1775" height="676" alt="Apsides Labs">
+      <img src="assets/apsides-labs-logo.svg?v=3" width="1775" height="676" alt="Apsides Labs">
     </div>
     <div class="footer-bottom">
       <span>&copy; <span data-year>2026</span> Perigee. Built by Apsides Labs.</span>

@@ -28,7 +28,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 <script>
-  (function(){try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();
+  (function(){document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 </script>
 <script type="application/ld+json">
 {
@@ -46,7 +46,7 @@
 
 <header class="site-header" data-pagefind-ignore>
   <div class="wrap">
-    <a class="brand" href="index.html"><img class="logo" src="assets/logo.svg" width="30" height="30" alt="">Perigee</a>
+    <a class="brand" href="index.html"><img class="logo" src="assets/logo.svg?v=3" width="30" height="30" alt="">Perigee</a>
     <nav class="nav" data-nav aria-label="Primary">
       <a href="index.html" aria-current="page">Home</a>
       <a href="blog.html">Blog</a>
@@ -86,7 +86,7 @@
         </div>
       </div>
       <div class="hero-art">
-        <img src="assets/covers/hero.png" width="1200" height="675" alt="Illustration: a rising bar chart with an upward arrow.">
+        <img src="assets/covers/hero.png?v=3" width="1200" height="675" alt="Illustration: a rising bar chart with an upward arrow.">
       </div>
     </div>
   </section>
@@ -117,7 +117,7 @@
           <span>7 min read</span>
         </div>
       </div>
-      <div class="lead-art"><img src="assets/covers/ai-safety.png" width="1200" height="675" alt="Illustration: a shield with a small breach."></div>
+      <div class="lead-art"><img src="assets/covers/ai-safety.png?v=3" width="1200" height="675" alt="Illustration: a shield with a small breach."></div>
     </article>
   </section>
 
@@ -129,7 +129,7 @@
     </div>
     <ol class="entries">
       <li class="entry">
-        <img class="entry-thumb" src="assets/covers/ai-agents.png" width="1200" height="675" alt="">
+        <img class="entry-thumb" src="assets/covers/ai-agents.png?v=3" width="1200" height="675" alt="">
         <div class="entry-body">
           <time class="entry-date" datetime="2026-10-08">8 Oct 2026</time>
           <h3 class="entry-title"><a href="posts/agents-at-work.html">The week AI agents became coworkers</a></h3>
@@ -138,7 +138,7 @@
         <span class="entry-tag">AI</span>
       </li>
       <li class="entry">
-        <img class="entry-thumb" src="assets/covers/cpu-ai.png" width="1200" height="675" alt="">
+        <img class="entry-thumb" src="assets/covers/cpu-ai.png?v=3" width="1200" height="675" alt="">
         <div class="entry-body">
           <time class="entry-date" datetime="2026-10-07">7 Oct 2026</time>
           <h3 class="entry-title"><a href="posts/capable-ai-on-constrained-hosts.html">Capable AI on CPU-only, constrained hosts</a></h3>
@@ -147,7 +147,7 @@
         <span class="entry-tag">Engineering</span>
       </li>
       <li class="entry">
-        <img class="entry-thumb" src="assets/covers/offline-learning.png" width="1200" height="675" alt="">
+        <img class="entry-thumb" src="assets/covers/offline-learning.png?v=3" width="1200" height="675" alt="">
         <div class="entry-body">
           <time class="entry-date" datetime="2026-10-06">6 Oct 2026</time>
           <h3 class="entry-title"><a href="posts/offline-first-learning.html">Why offline-first learning still matters</a></h3>
@@ -156,7 +156,7 @@
         <span class="entry-tag">Education</span>
       </li>
       <li class="entry">
-        <img class="entry-thumb" src="assets/covers/device.png" width="1200" height="675" alt="">
+        <img class="entry-thumb" src="assets/covers/device.png?v=3" width="1200" height="675" alt="">
         <div class="entry-body">
           <time class="entry-date" datetime="2026-10-05">5 Oct 2026</time>
           <h3 class="entry-title"><a href="posts/cpu-only-ai-default.html">Why CPU-only AI is the right default for learning software</a></h3>
@@ -165,7 +165,7 @@
         <span class="entry-tag">Engineering</span>
       </li>
       <li class="entry">
-        <img class="entry-thumb" src="assets/covers/speech.png" width="1200" height="675" alt="">
+        <img class="entry-thumb" src="assets/covers/speech.png?v=3" width="1200" height="675" alt="">
         <div class="entry-body">
           <time class="entry-date" datetime="2026-10-03">3 Oct 2026</time>
           <h3 class="entry-title"><a href="posts/dictionary-for-an-ignored-language.html">Building a dictionary for a language the web ignores</a></h3>
@@ -174,7 +174,7 @@
         <span class="entry-tag">Education</span>
       </li>
       <li class="entry">
-        <img class="entry-thumb" src="assets/covers/layers.png" width="1200" height="675" alt="">
+        <img class="entry-thumb" src="assets/covers/layers.png?v=3" width="1200" height="675" alt="">
         <div class="entry-body">
           <time class="entry-date" datetime="2026-10-01">1 Oct 2026</time>
           <h3 class="entry-title"><a href="posts/static-sites-outlive-frameworks.html">Static sites outlive their frameworks</a></h3>
@@ -183,7 +183,7 @@
         <span class="entry-tag">Engineering</span>
       </li>
       <li class="entry">
-        <img class="entry-thumb" src="assets/covers/check.png" width="1200" height="675" alt="">
+        <img class="entry-thumb" src="assets/covers/check.png?v=3" width="1200" height="675" alt="">
         <div class="entry-body">
           <time class="entry-date" datetime="2026-09-29">29 Sep 2026</time>
           <h3 class="entry-title"><a href="posts/evaluating-small-models.html">Evaluating small models honestly</a></h3>
@@ -192,7 +192,7 @@
         <span class="entry-tag">AI</span>
       </li>
       <li class="entry">
-        <img class="entry-thumb" src="assets/covers/writing.png" width="1200" height="675" alt="">
+        <img class="entry-thumb" src="assets/covers/writing.png?v=3" width="1200" height="675" alt="">
         <div class="entry-body">
           <time class="entry-date" datetime="2026-09-26">26 Sep 2026</time>
           <h3 class="entry-title"><a href="posts/teaching-a-script.html">Teaching a script, not just a language</a></h3>
@@ -212,7 +212,7 @@
         <p>An independent research and engineering studio building software that teaches &mdash; offline-first, dependency-free and CPU-only wherever we can.</p>
         <a class="link-more" href="about.html">More about the studio &rarr;</a>
       </div>
-      <img class="about-strip-logo" src="assets/apsides-labs-logo.svg" width="1775" height="676" alt="Apsides Labs">
+      <img class="about-strip-logo" src="assets/apsides-labs-logo.svg?v=3" width="1775" height="676" alt="Apsides Labs">
     </div>
   </section>
 
@@ -234,7 +234,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="index.html"><img class="logo" src="assets/logo.svg" width="30" height="30" alt="">Perigee</a>
+        <a class="brand" href="index.html"><img class="logo" src="assets/logo.svg?v=3" width="30" height="30" alt="">Perigee</a>
         <p>Building thoughtful software, intelligent learning systems, and technology products through research, engineering and experimentation.</p>
         <div class="social" style="margin-top:.9rem">
           <a href="https://github.com/apsideslabs" rel="noopener" aria-label="GitHub"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.6 4.6 18.6 4.9 18.6 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></a>
@@ -267,7 +267,7 @@
       </div>
     </div>
     <div class="footer-logo">
-      <img src="assets/apsides-labs-logo.svg" width="1775" height="676" alt="Apsides Labs">
+      <img src="assets/apsides-labs-logo.svg?v=3" width="1775" height="676" alt="Apsides Labs">
     </div>
     <div class="footer-bottom">
       <span>&copy; <span data-year>2026</span> Perigee. Built by Apsides Labs.</span>

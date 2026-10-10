@@ -22,7 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 <script>
-  (function(){try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();
+  (function(){document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 </script>
 <script type="application/ld+json">
 {
@@ -45,7 +45,7 @@
 
 <header class="site-header" data-pagefind-ignore>
   <div class="wrap">
-    <a class="brand" href="index.html"><img class="logo" src="assets/logo.svg" width="30" height="30" alt="">Perigee</a>
+    <a class="brand" href="index.html"><img class="logo" src="assets/logo.svg?v=3" width="30" height="30" alt="">Perigee</a>
     <nav class="nav" data-nav aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="blog.html">Blog</a>
@@ -73,7 +73,7 @@
       <h1 style="font-family:var(--font-serif);font-weight:600;font-size:var(--fs-xl);line-height:1.1;letter-spacing:-.02em;margin-bottom:var(--sp-3)">We build software that teaches.</h1>
       <p class="lede" style="font-size:var(--fs-md);color:var(--muted)">Apsides Labs is an independent research and engineering studio. We build thoughtful software, intelligent learning systems, and technology products through research, engineering and experimentation.</p>
     </div>
-    <img class="company-logo" src="assets/apsides-labs-logo.svg" width="1775" height="676" alt="Apsides Labs">
+    <img class="company-logo" src="assets/apsides-labs-logo.svg?v=3" width="1775" height="676" alt="Apsides Labs">
   </section>
 
   <section class="wrap section--tight">
@@ -139,7 +139,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="index.html"><img class="logo" src="assets/logo.svg" width="30" height="30" alt="">Perigee</a>
+        <a class="brand" href="index.html"><img class="logo" src="assets/logo.svg?v=3" width="30" height="30" alt="">Perigee</a>
         <p>Building thoughtful software, intelligent learning systems, and technology products through research, engineering and experimentation.</p>
       </div>
       <div class="footer-col">
@@ -167,7 +167,7 @@
       </div>
     </div>
     <div class="footer-logo">
-      <img src="assets/apsides-labs-logo.svg" width="1775" height="676" alt="Apsides Labs">
+      <img src="assets/apsides-labs-logo.svg?v=3" width="1775" height="676" alt="Apsides Labs">
     </div>
     <div class="footer-bottom">
       <span>&copy; <span data-year>2026</span> Perigee. Built by Apsides Labs.</span>

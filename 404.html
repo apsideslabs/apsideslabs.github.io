@@ -13,13 +13,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
 <script>
-  (function(){try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();
+  (function(){document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 </script>
 </head>
 <body>
 <header class="site-header" data-pagefind-ignore>
   <div class="wrap">
-    <a class="brand" href="/index.html"><img class="logo" src="/assets/logo.svg" width="30" height="30" alt="">Perigee</a>
+    <a class="brand" href="/index.html"><img class="logo" src="/assets/logo.svg?v=3" width="30" height="30" alt="">Perigee</a>
     <nav class="nav" data-nav aria-label="Primary">
       <a href="/index.html">Home</a>
       <a href="/blog.html">Blog</a>
