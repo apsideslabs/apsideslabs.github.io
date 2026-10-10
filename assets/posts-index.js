@@ -1,5 +1,5 @@
-/* Perigee post registry - generated. Do not edit by hand. */
-window.PERIGEE_POSTS = [
+/* Apsis post registry - generated. Do not edit by hand. */
+window.APSIS_POSTS = [
  {
   "id": "PRG-2026-001",
   "slug": "teaching-a-script",

@@ -175,7 +175,7 @@
       var url = b.getAttribute("data-url");
       var title = b.getAttribute("data-title") || document.title;
       var img = b.getAttribute("data-image");
-      var fname = b.getAttribute("data-filename") || "perigee-card.png";
+      var fname = b.getAttribute("data-filename") || "apsis-card.png";
       var label = b.textContent;
       var reset = function (t) { b.textContent = t; setTimeout(function () { b.textContent = label; }, 1800); };
 
