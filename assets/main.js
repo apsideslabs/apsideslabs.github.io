@@ -153,4 +153,9 @@
   var onScrollTop = function () { toTop.classList.toggle("is-visible", window.scrollY > 600); };
   window.addEventListener("scroll", onScrollTop, { passive: true });
   onScrollTop();
+
+  /* ---- Nav dropdown: close on outside click ---- */
+  document.querySelectorAll(".nav-drop").forEach(function (d) {
+    document.addEventListener("click", function (e) { if (!d.contains(e.target)) d.removeAttribute("open"); });
+  });
 })();

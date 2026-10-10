@@ -40,6 +40,14 @@
     <nav class="nav" data-nav aria-label="Primary">
       <a href="../index.html">Home</a>
       <a href="../blog.html">Blog</a>
+      <details class="nav-drop">
+        <summary>Our products</summary>
+        <div class="nav-drop-menu">
+          <a href="https://apsideslabs.github.io/Luitra/" rel="noopener">Luitra</a>
+          <a href="https://apsideslabs.github.io/SikBodo/" rel="noopener">SikBodo</a>
+          <a href="https://apsideslabs.github.io/mindtrace/" rel="noopener">Mindtrace</a>
+        </div>
+      </details>
       <a href="../search.html">Search</a>
       <a href="../about.html">About</a>
       <a href="../feed.xml">RSS</a>
@@ -81,10 +89,9 @@
       <p>Build for those learners first, and something interesting happens: the product also becomes better for everyone else. Offline-first software is faster, more private, and more durable, because it does not depend on a server being up or a connection being good.</p>
 
       <h2>What we build</h2>
-      <p>Three of our projects take this idea seriously.</p>
+      <p>Two of our projects take this idea seriously.</p>
       <p><strong>Luitra</strong> is a free, offline, dependency-free platform for learning Assamese — lessons, grammar, verb tables, the script, a dictionary, phrases, conversations, reading and a translator. It is a static site: no build step, no runtime dependencies, no server to fail.</p>
       <p><strong>SikBodo</strong> does the same for Bodo, with graded lessons, a 348-word dictionary, dialogues and an interactive practice arena. Also static, also offline-first.</p>
-      <p><strong>Linguilo</strong> brings the same philosophy to English, with a gamified, offline-first experience — lessons, grammar, vocabulary, quizzes, streaks and achievements — built on the Jigyasa gamification engine.</p>
 
       <h2>How offline-first is actually built</h2>
       <ul>
@@ -95,7 +102,7 @@
         <li><strong>The network is an enhancement.</strong> Online features — sync, accounts, analytics — are added on top, never required for the core.</li>
       </ul>
 
-      <div class="callout"><strong>Where this shows up in our stack:</strong> our exam-prep platform ThinkQuix uses a static HTML5 frontend backed by Supabase — but the lessons themselves are built to work hard even when the backend is slow or absent.</div>
+      <div class="callout"><strong>Where this shows up in our stack:</strong> our exam-prep work uses a static HTML5 frontend backed by Supabase — but the lessons themselves are built to work hard even when the backend is slow or absent.</div>
 
       <h2>Constraint as a design brief</h2>
       <p>We do not think of "works offline" as a feature to tick. We think of it as the honest baseline for anything meant to teach people in the real world, on the real hardware and connections they actually have. Build for the lowest common denominator, and you build something that lasts for everyone.</p>

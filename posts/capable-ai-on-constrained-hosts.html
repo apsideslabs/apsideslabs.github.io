@@ -40,6 +40,14 @@
     <nav class="nav" data-nav aria-label="Primary">
       <a href="../index.html">Home</a>
       <a href="../blog.html">Blog</a>
+      <details class="nav-drop">
+        <summary>Our products</summary>
+        <div class="nav-drop-menu">
+          <a href="https://apsideslabs.github.io/Luitra/" rel="noopener">Luitra</a>
+          <a href="https://apsideslabs.github.io/SikBodo/" rel="noopener">SikBodo</a>
+          <a href="https://apsideslabs.github.io/mindtrace/" rel="noopener">Mindtrace</a>
+        </div>
+      </details>
       <a href="../search.html">Search</a>
       <a href="../about.html">About</a>
       <a href="../feed.xml">RSS</a>
@@ -78,8 +86,8 @@
 
       <h2>What we actually run</h2>
       <p>Two of our projects are exercises in doing a lot with a little.</p>
-      <p><strong>apsides-voice-api</strong> is a reusable HTTP voice backend — text-to-speech and streaming speech-to-text — designed for constrained hosts. It pairs a compact ONNX text-to-speech model with a streaming speech-recognition model, and it runs on CPU only. No GPU, no vendor account, no per-request fees. You can deploy it on a small VPS and it stays up.</p>
-      <p><strong>MiniCPM5-1B on llama.cpp</strong> is our minimal, production-ready deployment of a one-billion-parameter language model. It ships a prebuilt CPU binary (no compiler needed on the host) and exposes an OpenAI-compatible API, so existing tooling just works. A 1B model will not write your novel. It will classify, summarise, extract, route and draft — reliably, locally, for free.</p>
+      <p><strong>Our voice backend</strong> is a reusable HTTP voice backend — text-to-speech and streaming speech-to-text — designed for constrained hosts. It pairs a compact ONNX text-to-speech model with a streaming speech-recognition model, and it runs on CPU only. No GPU, no vendor account, no per-request fees. You can deploy it on a small VPS and it stays up.</p>
+      <p><strong>A one-billion-parameter model on llama.cpp</strong> is our minimal, production-ready deployment of a one-billion-parameter language model. It ships a prebuilt CPU binary (no compiler needed on the host) and exposes an OpenAI-compatible API, so existing tooling just works. A 1B model will not write your novel. It will classify, summarise, extract, route and draft — reliably, locally, for free.</p>
 
       <h2>The trend is real</h2>
       <p>We are not alone in this. This week, researchers at NTU Singapore published a framework that uses ordinary language models to generate specialised decision-making software — port schedules, delivery routes, staff rosters — in about an hour and for under ten dollars in compute, work that used to take engineers months. Notably, the cheaper models did almost all of the value: a fast, low-cost model reached 0.95 of the best result for $1.59, while the strongest model added a few points for roughly 28 times the price.</p>
