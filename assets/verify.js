@@ -1,6 +1,6 @@
 (function () {
   "use strict";
-  var POSTS = window.APSIS_POSTS || [];
+  var POSTS = window.APSIDES_POSTS || [];
   var statusEl = document.getElementById("status");
   var resultEl = document.getElementById("result");
   var MONTHS = ["January","February","March","April","May","June","July",

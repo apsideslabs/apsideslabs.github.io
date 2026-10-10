@@ -1,5 +1,5 @@
-/* Apsis post registry - generated. Do not edit by hand. */
-window.APSIS_POSTS = [
+/* Apsides Journal post registry - generated. Do not edit by hand. */
+window.APSIDES_POSTS = [
  {
   "id": "PRG-2026-001",
   "slug": "teaching-a-script",
