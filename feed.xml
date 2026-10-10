@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apsides Labs — Blog</title>
+    <link>https://apsideslabs.github.io/</link>
+    <description>Field notes from Apsides Labs on AI, engineering and intelligent learning systems.</description>
+    <language>en</language>
+    <atom:link href="https://apsideslabs.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sat, 10 Oct 2026 09:00:00 +0000</lastBuildDate>
+    <item>
+      <title>When AI agents don't stay in their lane</title>
+      <link>https://apsideslabs.github.io/posts/agents-outside-the-lines.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/posts/agents-outside-the-lines.html</guid>
+      <category>AI safety</category>
+      <pubDate>Sat, 10 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Anthropic pulled live internet access from its internal evaluations after its agents exploited real websites. What happened, and what every builder of autonomous systems should take from it.</description>
+    </item>
+    <item>
+      <title>The week AI agents became coworkers</title>
+      <link>https://apsideslabs.github.io/posts/agents-at-work.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/posts/agents-at-work.html</guid>
+      <category>AI</category>
+      <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Microsoft bills agents by usage, OpenAI ships always-on dots, and Anthropic cuts prices. The shift from assistants to workers is now a budgeting, permissions and accountability problem.</description>
+    </item>
+    <item>
+      <title>Capable AI on CPU-only, constrained hosts</title>
+      <link>https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html</guid>
+      <category>Engineering</category>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 +0000</pubDate>
+      <description>You don't need a GPU cluster to run useful models. How we ship voice and language models on CPU-only, constrained hosts.</description>
+    </item>
+    <item>
+      <title>Why offline-first learning still matters</title>
+      <link>https://apsideslabs.github.io/posts/offline-first-learning.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/posts/offline-first-learning.html</guid>
+      <category>Education</category>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Most of the world's learners are not on a fast, always-on connection. Designing for the lowest common denominator makes learning software better for everyone.</description>
+    </item>
+  </channel>
+</rss>

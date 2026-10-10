@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capable AI on CPU-only, constrained hosts — Apsides Labs</title>
+<meta name="description" content="You don't need a GPU cluster to run useful models. How we ship voice and language models on CPU-only, constrained hosts — and why the small-model trend matters.">
+<link rel="canonical" href="https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="Apsides Labs">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="article:published_time" content="2026-10-07">
+<meta property="article:section" content="Engineering">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Apsides Labs">
+<meta property="og:title" content="Capable AI on CPU-only, constrained hosts">
+<meta property="og:description" content="How we run useful models on the hardware people already have.">
+<meta property="og:url" content="https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html">
+<meta property="og:image" content="https://apsideslabs.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+  (function(){try{var t=localStorage.getItem("theme");if(!t){t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Capable AI on CPU-only, constrained hosts","description":"How we run useful models on the hardware people already have.","datePublished":"2026-10-07","dateModified":"2026-10-07","articleSection":"Engineering","wordCount":1020,"author":{"@type":"Organization","name":"Apsides Labs","url":"https://apsideslabs.github.io/"},"publisher":{"@type":"Organization","name":"Apsides Labs","logo":{"@type":"ImageObject","url":"https://apsideslabs.github.io/assets/favicon.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html"}}
+</script>
+</head>
+<body>
+<div class="progress" data-progress aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" data-pagefind-ignore>
+  <div class="wrap">
+    <a class="brand" href="../index.html"><span class="mark" aria-hidden="true">A</span>Apsides Labs</a>
+    <nav class="nav" data-nav aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../search.html">Search</a>
+      <a href="../about.html">About</a>
+      <a href="../feed.xml">RSS</a>
+      <a class="nav-cta" href="https://github.com/apsideslabs" rel="noopener">GitHub</a>
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn" data-theme-toggle type="button" aria-label="Switch to dark theme">
+        <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn menu-toggle" data-menu-toggle type="button" aria-label="Open menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" data-pagefind-body>
+  <article class="wrap article" data-article>
+    <header class="article-header">
+      <span class="tag">Engineering</span>
+      <h1>Capable AI on CPU-only, constrained hosts</h1>
+      <p class="dek">The most interesting AI work this year is not happening at the frontier. It is happening on cheap CPUs, with small models, doing narrow jobs well.</p>
+      <div class="article-meta">
+        <span class="avatar" aria-hidden="true">A</span>
+        <span><strong style="color:var(--text)">Apsides Labs</strong></span>
+        <span>·</span>
+        <time datetime="2026-10-07">7 October 2026</time>
+        <span>·</span>
+        <span>8 min read</span>
+      </div>
+    </header>
+
+    <div class="prose">
+      <p>There is a quiet assumption in most AI conversations: that useful models require GPUs, cloud budgets and a data centre. In our experience building learning tools for people on modest hardware, the opposite is increasingly true. A well-chosen small model, run on a CPU, solves a surprising number of real problems — faster, cheaper and more privately than the alternative.</p>
+
+      <h2>What we actually run</h2>
+      <p>Two of our projects are exercises in doing a lot with a little.</p>
+      <p><strong>apsides-voice-api</strong> is a reusable HTTP voice backend — text-to-speech and streaming speech-to-text — designed for constrained hosts. It pairs a compact ONNX text-to-speech model with a streaming speech-recognition model, and it runs on CPU only. No GPU, no vendor account, no per-request fees. You can deploy it on a small VPS and it stays up.</p>
+      <p><strong>MiniCPM5-1B on llama.cpp</strong> is our minimal, production-ready deployment of a one-billion-parameter language model. It ships a prebuilt CPU binary (no compiler needed on the host) and exposes an OpenAI-compatible API, so existing tooling just works. A 1B model will not write your novel. It will classify, summarise, extract, route and draft — reliably, locally, for free.</p>
+
+      <h2>The trend is real</h2>
+      <p>We are not alone in this. This week, researchers at NTU Singapore published a framework that uses ordinary language models to generate specialised decision-making software — port schedules, delivery routes, staff rosters — in about an hour and for under ten dollars in compute, work that used to take engineers months. Notably, the cheaper models did almost all of the value: a fast, low-cost model reached 0.95 of the best result for $1.59, while the strongest model added a few points for roughly 28 times the price.</p>
+      <p>That ratio is the whole story of practical AI right now. The last few per cent of quality is real, but it is expensive, and most tasks do not need it.</p>
+
+      <h2>How to get there: a short playbook</h2>
+      <ul>
+        <li><strong>Pick the smallest model that clears your bar.</strong> Define the task narrowly, set an acceptance threshold, and test upward until it passes. Do not start at the top.</li>
+        <li><strong>Quantise.</strong> Four-bit quantised weights (the GGUF format, for example) cut memory and cost dramatically with a small quality loss. For narrow tasks, that trade is almost always worth it.</li>
+        <li><strong>Run it on the CPU you already have.</strong> With a good inference engine, a 1–3B model answers in interactive time on a modern CPU. No accelerator required.</li>
+        <li><strong>Keep it local.</strong> Local inference means no data leaves the machine, no per-token bill, and no dependency on someone else's uptime.</li>
+        <li><strong>Measure, then decide.</strong> Benchmark on your own inputs. Published scores are a starting point, not a verdict.</li>
+      </ul>
+
+      <div class="callout"><strong>Why this is our default:</strong> if a model can run on the hardware someone already owns, then cost, privacy and reliability stop being reasons not to build. Constraint is the design brief, not the excuse.</div>
+
+      <h2>The point</h2>
+      <p>The frontier gets the headlines, but the durable value is in small, local, well-scoped models that do one job perfectly and cost nothing to run. That is where we build — and it is where a lot of the next wave of software will be built too.</p>
+    </div>
+
+          <section class="comments" data-pagefind-ignore>
+        <h2>Comments</h2>
+        <p class="comments-note">Powered by GitHub Discussions. Sign in with GitHub to join the conversation.</p>
+        <script src="https://giscus.app/client.js"
+          data-repo="apsideslabs/apsideslabs.github.io"
+          data-repo-id="R_kgDOVDQmZw"
+          data-category="Announcements"
+          data-category-id="DIC_kwDOVDQmZ84DHd2Y"
+          data-mapping="pathname"
+          data-strict="1"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async></script>
+      </section>
+
+<footer class="article-foot">
+      <div class="post-nav">
+        <a href="agents-at-work.html"><span class="dir">&larr; Previous</span><span class="t">The week AI agents became coworkers</span></a>
+        <a class="next" href="offline-first-learning.html"><span class="dir">Next &rarr;</span><span class="t">Why offline-first learning still matters</span></a>
+      </div>
+    </footer>
+  </article>
+</main>
+
+<footer class="site-footer" data-pagefind-ignore>
+  <div class="wrap">
+    <div class="footer-bottom" style="border-top:none">
+      <span>&copy; <span data-year>2026</span> Apsides Labs. Built by Apsides Labs.</span>
+      <span><a href="../index.html">Home</a> · <a href="../blog.html">Blog</a>
+      <a href="../search.html">Search</a> · <a href="../about.html">About</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/vendor/lenis.min.js" defer></script>
+<script src="../assets/main.js" defer></script>
+<script data-goatcounter="https://YOUR-CODE.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
