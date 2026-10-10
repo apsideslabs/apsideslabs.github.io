@@ -12,7 +12,7 @@
     root.setAttribute("data-theme", theme);
     try { localStorage.setItem("theme", theme); } catch (e) {}
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", theme === "dark" ? "#0b0d13" : "#ffffff");
+    if (meta) meta.setAttribute("content", theme === "dark" ? "#131316" : "#fafaf8");
     document.querySelectorAll("[data-theme-toggle]").forEach(function (btn) {
       btn.setAttribute("aria-label", theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
     });

@@ -7,16 +7,16 @@
 <meta name="description" content="Search every post on the Apsides Labs blog.">
 <link rel="canonical" href="https://apsideslabs.github.io/search.html">
 <meta name="robots" content="noindex,follow">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#fafaf8">
 <meta name="author" content="Apsides Labs">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 <link href="pagefind/pagefind-ui.css" rel="stylesheet">
 <script>
-  (function(){try{var t=localStorage.getItem("theme");if(!t){t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+  (function(){try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 </script>
 </head>
 <body>
@@ -47,8 +47,8 @@
 
 <main id="main" class="search-page">
   <section class="wrap section--tight" style="padding-top:var(--sp-5);max-width:820px">
-    <h1 style="font-family:var(--font-serif);font-weight:600;font-size:var(--step-3);letter-spacing:-.02em;margin-bottom:.4rem">Search</h1>
-    <p style="color:var(--text-muted);margin-bottom:var(--sp-4)">Full-text search across every post. Powered by Pagefind — it runs entirely in your browser, with no server and no tracking.</p>
+    <h1 style="font-family:var(--font-serif);font-weight:600;font-size:var(--fs-xl);letter-spacing:-.02em;margin-bottom:.4rem">Search</h1>
+    <p style="color:var(--muted);margin-bottom:var(--sp-4)">Full-text search across every post. Powered by Pagefind — it runs entirely in your browser, with no server and no tracking.</p>
     <div id="search"></div>
   </section>
 </main>

@@ -6,7 +6,7 @@
 <title>Blog — Apsides Labs</title>
 <meta name="description" content="Every post from the Apsides Labs blog — on AI, AI safety, engineering and intelligent learning systems.">
 <link rel="canonical" href="https://apsideslabs.github.io/blog.html">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#fafaf8">
 <meta name="author" content="Apsides Labs">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="website">
@@ -20,10 +20,10 @@
 <link rel="alternate" type="application/rss+xml" title="Apsides Labs — Blog" href="feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 <script>
-  (function(){try{var t=localStorage.getItem("theme");if(!t){t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+  (function(){try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"CollectionPage","name":"Blog — Apsides Labs","url":"https://apsideslabs.github.io/blog.html","isPartOf":{"@type":"WebSite","name":"Apsides Labs","url":"https://apsideslabs.github.io/"}}
@@ -59,7 +59,7 @@
   <section class="wrap section--tight" style="padding-top:var(--sp-5)">
     <div class="section-head">
       <div>
-        <h1 style="font-family:var(--font-serif);font-weight:600;font-size:var(--step-3);letter-spacing:-.02em">The blog</h1>
+        <h1 style="font-family:var(--font-serif);font-weight:600;font-size:var(--fs-xl);letter-spacing:-.02em">The blog</h1>
         <p>Notes on AI, AI safety, engineering and education — written as we build.</p>
       </div>
     </div>
@@ -84,25 +84,25 @@
         <div class="card-top"><span class="tag">AI safety</span></div>
         <h3><a href="posts/agents-outside-the-lines.html">When AI agents don't stay in their lane</a></h3>
         <p>Anthropic pulled live internet access from its internal evaluations after its agents exploited real websites. Capability has outrun control.</p>
-        <div class="card-foot"><span style="color:var(--text-faint);font-size:var(--step--1)">10 Oct 2026 · 7 min</span><a class="read-more" href="posts/agents-outside-the-lines.html">Read &rarr;</a></div>
+        <div class="card-foot"><span style="color:var(--faint);font-size:var(--fs-sm)">10 Oct 2026 · 7 min</span><a class="read-more" href="posts/agents-outside-the-lines.html">Read &rarr;</a></div>
       </article>
       <article class="post-card" data-post data-title="The week AI agents became coworkers" data-tags="ai" data-excerpt="Microsoft bills agents by usage, OpenAI ships always-on dots, Anthropic cuts prices.">
         <div class="card-top"><span class="tag">AI</span></div>
         <h3><a href="posts/agents-at-work.html">The week AI agents became coworkers</a></h3>
         <p>Microsoft bills agents by usage, OpenAI ships always-on "dots", and Anthropic cuts prices. Assistants are becoming workers — and that is a budgeting question.</p>
-        <div class="card-foot"><span style="color:var(--text-faint);font-size:var(--step--1)">8 Oct 2026 · 6 min</span><a class="read-more" href="posts/agents-at-work.html">Read &rarr;</a></div>
+        <div class="card-foot"><span style="color:var(--faint);font-size:var(--fs-sm)">8 Oct 2026 · 6 min</span><a class="read-more" href="posts/agents-at-work.html">Read &rarr;</a></div>
       </article>
       <article class="post-card" data-post data-title="Capable AI on CPU-only, constrained hosts" data-tags="engineering" data-excerpt="You do not need a GPU cluster to run useful models.">
         <div class="card-top"><span class="tag">Engineering</span></div>
         <h3><a href="posts/capable-ai-on-constrained-hosts.html">Capable AI on CPU-only, constrained hosts</a></h3>
         <p>You do not need a GPU cluster to run useful models. How we ship voice and language models on the hardware people already have.</p>
-        <div class="card-foot"><span style="color:var(--text-faint);font-size:var(--step--1)">7 Oct 2026 · 8 min</span><a class="read-more" href="posts/capable-ai-on-constrained-hosts.html">Read &rarr;</a></div>
+        <div class="card-foot"><span style="color:var(--faint);font-size:var(--fs-sm)">7 Oct 2026 · 8 min</span><a class="read-more" href="posts/capable-ai-on-constrained-hosts.html">Read &rarr;</a></div>
       </article>
       <article class="post-card" data-post data-title="Why offline-first learning still matters" data-tags="education" data-excerpt="Most of the world's learners are not on a fast, always-on connection.">
         <div class="card-top"><span class="tag">Education</span></div>
         <h3><a href="posts/offline-first-learning.html">Why offline-first learning still matters</a></h3>
         <p>Most of the world's learners are not on a fast, always-on connection. Designing for the lowest common denominator makes software better for everyone.</p>
-        <div class="card-foot"><span style="color:var(--text-faint);font-size:var(--step--1)">6 Oct 2026 · 6 min</span><a class="read-more" href="posts/offline-first-learning.html">Read &rarr;</a></div>
+        <div class="card-foot"><span style="color:var(--faint);font-size:var(--fs-sm)">6 Oct 2026 · 6 min</span><a class="read-more" href="posts/offline-first-learning.html">Read &rarr;</a></div>
       </article>
     </div>
     <p class="empty-state" data-empty hidden>No posts match your search.</p>
