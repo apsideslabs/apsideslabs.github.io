@@ -1,5 +1,5 @@
-/* Apsides Journal post registry - generated. Do not edit by hand. */
-window.APSIDES_POSTS = [
+/* Grapheme post registry - generated. Do not edit by hand. */
+window.GRAPHEME_POSTS = [
  {
   "id": "PRG-2026-001",
   "slug": "teaching-a-script",
