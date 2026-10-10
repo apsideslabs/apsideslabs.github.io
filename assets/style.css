@@ -473,6 +473,34 @@ html.js .reveal { opacity: 0; transform: translateY(10px); transition: opacity .
 html.js .reveal.is-visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
 
+/* Share block (per post) */
+.share-block {
+  margin: var(--sp-5) 0;
+  padding: var(--sp-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+}
+.share-head h2 { font-size: var(--fs-lg); margin: 0 0 var(--sp-1); }
+.share-head p { color: var(--muted); font-size: var(--fs-sm); margin: 0 0 var(--sp-3); }
+.share-body { display: grid; grid-template-columns: minmax(0, 280px) 1fr; gap: var(--sp-4); align-items: start; }
+.share-card { display: block; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-sm); transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+.share-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.share-card img { display: block; width: 100%; height: auto; }
+.share-btns { display: flex; flex-wrap: wrap; gap: .6rem; }
+.share-btn { display: inline-flex; align-items: center; gap: .4rem; padding: .55rem .95rem; border: 1px solid var(--border-2); border-radius: 999px; background: var(--card); color: var(--ink); font: 600 var(--fs-sm)/1 var(--sans); text-decoration: none; cursor: pointer; transition: border-color .2s var(--ease), background .2s var(--ease), color .2s var(--ease); }
+.share-btn:hover { border-color: var(--blue); color: var(--blue-ink); background: var(--blue-soft); }
+.share-btn-primary { background: var(--blue); border-color: var(--blue); color: #fff; }
+.share-btn-primary:hover { background: var(--blue-ink); border-color: var(--blue-ink); color: #fff; }
+.share-qr { margin: var(--sp-3) 0 0; }
+.share-qr img { width: 132px; height: 132px; padding: 6px; border: 1px solid var(--border); border-radius: var(--radius); background: #fff; display: block; }
+.share-qr figcaption { margin-top: .5rem; font-size: var(--fs-xs); color: var(--muted); }
+@media (max-width: 720px) {
+  .share-body { grid-template-columns: 1fr; }
+  .share-card { max-width: 320px; }
+}
+
 /* Print */
 @media print {
   .site-header, .site-footer, .cta-band, .progress, .toolbar, .to-top { display: none; }

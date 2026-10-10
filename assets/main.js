@@ -158,4 +158,15 @@
   document.querySelectorAll(".nav-drop").forEach(function (d) {
     document.addEventListener("click", function (e) { if (!d.contains(e.target)) d.removeAttribute("open"); });
   });
+
+  /* ---- Share: copy link ---- */
+  document.querySelectorAll("[data-copy-link]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var t = b.textContent;
+      var done = function () { b.textContent = "Link copied"; setTimeout(function () { b.textContent = t; }, 1600); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(b.getAttribute("data-copy-link")).then(done, done);
+      } else { done(); }
+    });
+  });
 })();
