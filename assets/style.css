@@ -21,8 +21,8 @@
 
   --measure: 66ch;
   --wrap: 1120px;
-  --radius: 10px;
-  --radius-lg: 16px;
+  --radius: 3px;
+  --radius-lg: 4px;
 
   --sp-1: 0.5rem;  --sp-2: 0.85rem; --sp-3: 1.25rem;
   --sp-4: 2rem;    --sp-5: 3.25rem; --sp-6: 5.5rem;
@@ -48,9 +48,9 @@
   --orange-ink:  #c2410c;
   --orange-soft: #fdece1;
 
-  --shadow-sm: 0 1px 2px rgba(20,20,20,.04);
-  --shadow-md: 0 1px 3px rgba(20,20,20,.05), 0 10px 24px rgba(20,20,20,.05);
-  --shadow-lg: 0 24px 48px rgba(20,20,20,.10);
+  --shadow-sm: none;
+  --shadow-md: 0 1px 2px rgba(20,20,20,.05);
+  --shadow-lg: 0 10px 30px rgba(20,20,20,.10);
 
   --squiggle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 12' preserveAspectRatio='none'%3E%3Cpath d='M2 6c22-4.5 44 3.5 66-1s44-3.5 62 1c10 2.2 20 1 28-2.5' fill='none' stroke='%23000' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E");
 }
@@ -531,6 +531,32 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
   .share-body { grid-template-columns: 1fr; }
   .share-card { max-width: 320px; }
 }
+
+/* Publication front page — masthead, flat rules, no card chrome */
+.masthead { padding: var(--sp-5) 0 var(--sp-3); border-bottom: 3px solid var(--ink); }
+.masthead-name { font-family: var(--serif); font-weight: 600; font-size: clamp(2.7rem, 7.5vw, 4.8rem); line-height: .98; letter-spacing: -.025em; margin: 0; }
+.masthead-tag { font-family: var(--serif); font-size: var(--fs-md); color: var(--ink-2); margin: .7rem 0 0; max-width: 48ch; }
+.masthead-line { display: flex; flex-wrap: wrap; gap: .55rem; align-items: center; margin-top: var(--sp-3); font: 600 var(--fs-xs)/1 var(--sans); letter-spacing: .13em; text-transform: uppercase; color: var(--muted); }
+.masthead-line .sep { color: var(--border-2); }
+.entries { border-top: 1px solid var(--border); }
+.entry { border-bottom: 1px solid var(--border); }
+.entry-thumb { border-radius: 0; border: 1px solid var(--border); }
+.post-card { border: 0; border-top: 1px solid var(--border); border-radius: 0; box-shadow: none; padding-top: var(--sp-3); }
+.post-card:hover { border-color: var(--border-2); box-shadow: none; }
+.chip { border-radius: 2px; }
+/* Filed-under as plain text links, not pills */
+.topics .chip, a.chip { border: 0; background: transparent; padding: 0; border-radius: 0; color: var(--orange-ink); font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.topics .chip:hover, a.chip:hover { color: var(--blue); }
+.entry-thumb, .card-thumb, .post-cover img { border-radius: 0 !important; }
+.lead-art img, .hero-art img { border-radius: 0; }
+/* strip remaining product chrome: pills, filled CTAs, rounded media */
+.nav .nav-cta { color: var(--ink); background: transparent; padding-inline: 0; }
+.nav .nav-cta:hover { background: transparent; color: var(--blue); }
+.icon-btn, .btn, .entry-tag, .post-tag, .share-btn { border-radius: 2px; }
+.entry-tag { background: transparent; padding: 0; }
+.post-cover img, .card-thumb, .share-card img, .post-card, .vr-card, .share-qr img, .lead-art img { border-radius: 0; }
+.vr-card { border-left-width: 3px; }
+.pid-badge { border-radius: 2px; }
 
 /* Print */
 @media print {
