@@ -293,6 +293,9 @@ button { font: inherit; color: inherit; }
 .product h3 { font-family: var(--serif); font-size: var(--fs-md); font-weight: 600; color: var(--ink); }
 .product p { color: var(--muted); font-size: var(--fs-sm); }
 .product .p-meta { margin-top: auto; font-size: var(--fs-xs); color: var(--faint); display: flex; gap: .4rem; flex-wrap: wrap; }
+.product-link { margin-top: .55rem; font-weight: 600; font-size: var(--fs-sm); color: var(--blue); }
+.product-link:hover { color: var(--orange-ink); }
+.company-logo { width: min(330px, 72%); margin-top: var(--sp-4); display: block; }
 
 /* ---------- Article / prose ---------- */
 .article { padding-block: var(--sp-5); }
