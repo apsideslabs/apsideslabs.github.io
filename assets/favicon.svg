@@ -1,10 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Apsides Labs">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4f46e5"/>
-      <stop offset="1" stop-color="#7c3aed"/>
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="16" fill="url(#g)"/>
-  <path d="M32 14 L47 50 H39.5 L36.6 42.6 H27.4 L24.5 50 H17 Z M29.7 36.2 h4.6 L32 29.4 Z" fill="#ffffff"/>
+  <rect x="8" y="8" width="50" height="50" rx="15" fill="#e25822"/>
+  <rect x="3" y="3" width="50" height="50" rx="15" fill="#1c1a17"/>
+  <path d="M28 12 L43 48 H35.6 L32.7 40.6 H23.4 L20.5 48 H13.1 Z M25.9 34.2 h4.6 L28.2 27.2 Z" fill="#faf7f1"/>
 </svg>
