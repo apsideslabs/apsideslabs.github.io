@@ -169,4 +169,45 @@
       } else { done(); }
     });
   });
+  /* ---- Share: native share sheet (attaches the card image where supported) ---- */
+  document.querySelectorAll("[data-native-share]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var url = b.getAttribute("data-url");
+      var title = b.getAttribute("data-title") || document.title;
+      var img = b.getAttribute("data-image");
+      var fname = b.getAttribute("data-filename") || "perigee-card.png";
+      var label = b.textContent;
+      var reset = function (t) { b.textContent = t; setTimeout(function () { b.textContent = label; }, 1800); };
+
+      var plainShare = function () {
+        if (navigator.share) {
+          navigator.share({ title: title, text: title, url: url }).catch(function () {});
+        } else {
+          copyText(url, reset);
+        }
+      };
+
+      if (!img || !navigator.canShare) { plainShare(); return; }
+
+      fetch(img)
+        .then(function (r) { return r.blob(); })
+        .then(function (blob) {
+          var file = new File([blob], fname, { type: blob.type || "image/png" });
+          if (navigator.canShare({ files: [file] })) {
+            navigator.share({ files: [file], title: title, text: title, url: url })
+              .catch(function () {});
+          } else {
+            plainShare();
+          }
+        })
+        .catch(function () { plainShare(); });
+    });
+  });
+
+  function copyText(text, done) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { done("Link copied"); },
+                                              function () { done("Copy failed"); });
+    } else { done("Copy failed"); }
+  }
 })();

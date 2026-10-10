@@ -496,6 +496,8 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 .share-verify { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin: var(--sp-3) 0 0; }
 .pid-badge { font: 600 var(--fs-xs)/1 var(--mono); letter-spacing: .04em; color: var(--blue-ink); background: var(--blue-soft); padding: .45rem .7rem; border-radius: 8px; }
 .share-verify a { font-weight: 600; }
+.share-note { margin: var(--sp-3) 0 0; font-size: var(--fs-xs); color: var(--muted); line-height: 1.5; }
+.share-note strong { color: var(--ink-2); }
 
 /* Verify page */
 .verify-hero { max-width: var(--measure); margin: var(--sp-6) 0 var(--sp-5); }
