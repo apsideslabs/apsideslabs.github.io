@@ -295,7 +295,19 @@ button { font: inherit; color: inherit; }
 .product .p-meta { margin-top: auto; font-size: var(--fs-xs); color: var(--faint); display: flex; gap: .4rem; flex-wrap: wrap; }
 .product-link { margin-top: .55rem; font-weight: 600; font-size: var(--fs-sm); color: var(--blue); }
 .product-link:hover { color: var(--orange-ink); }
-.company-logo { width: min(330px, 72%); margin-top: var(--sp-4); display: block; }
+.company-logo { width: min(340px, 74%); margin: var(--sp-4) auto 0; display: block; }
+
+/* ---------- Homepage strips ---------- */
+.topics { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding-block: var(--sp-2); }
+.topics-label { font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: .09em; color: var(--faint); font-weight: 600; margin-right: .35rem; }
+a.chip { text-decoration: none; display: inline-block; }
+.about-strip { display: grid; grid-template-columns: 1fr auto; gap: var(--sp-4); align-items: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--sp-4); }
+.about-strip h2 { font-family: var(--serif); font-weight: 500; font-size: var(--fs-xl); letter-spacing: -.015em; margin: .35rem 0 .5rem; }
+.about-strip p { color: var(--muted); max-width: 54ch; }
+.about-strip-logo { width: min(250px, 42vw); }
+@media (max-width: 760px) { .about-strip { grid-template-columns: 1fr; gap: var(--sp-3); } }
+.footer-logo { display: flex; justify-content: center; padding-block: var(--sp-4) var(--sp-1); }
+.footer-logo img { width: min(240px, 56%); }
 
 /* ---------- Article / prose ---------- */
 .article { padding-block: var(--sp-5); }
