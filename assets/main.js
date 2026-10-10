@@ -193,9 +193,11 @@
         .then(function (r) { return r.blob(); })
         .then(function (blob) {
           var file = new File([blob], fname, { type: blob.type || "image/png" });
-          if (navigator.canShare({ files: [file] })) {
-            navigator.share({ files: [file], title: title, text: title, url: url })
-              .catch(function () {});
+          if (navigator.canShare && navigator.canShare({ files: [file] })) {
+            /* IMPORTANT: never pass `url` together with `files` — browsers
+               reject that combination and the share silently fails. */
+            navigator.share({ files: [file], title: title, text: title })
+              .catch(function () { plainShare(); });
           } else {
             plainShare();
           }
