@@ -69,4 +69,39 @@
     <lastmod>2026-09-26</lastmod>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://apsideslabs.github.io/tags/ai.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://apsideslabs.github.io/tags/ai-safety.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://apsideslabs.github.io/tags/engineering.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://apsideslabs.github.io/tags/education.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://apsideslabs.github.io/archive.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://apsideslabs.github.io/contact.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://apsideslabs.github.io/privacy.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.3</priority>
+  </url>
 </urlset>

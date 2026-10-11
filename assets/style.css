@@ -573,6 +573,21 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 .vr-card { border-left-width: 3px; }
 .pid-badge { border-radius: 2px; }
 
+/* Tag / archive / static pages */
+.tag-head { padding: var(--sp-5) 0 var(--sp-3); border-bottom: 4px double var(--ink); margin-bottom: var(--sp-4); }
+.tag-head h1 { font-family: var(--serif); font-weight: 600; font-size: var(--fs-2xl); letter-spacing: -.02em; margin: .25rem 0 .5rem; }
+.tag-head .lede { font-size: var(--fs-md); color: var(--muted); margin: 0; }
+.arc-year { margin-bottom: var(--sp-4); }
+.arc-year h2 { font-family: var(--sans); font-weight: 600; font-size: var(--fs-sm); text-transform: uppercase; letter-spacing: .14em; border-bottom: 1px solid var(--ink); padding-bottom: .5rem; }
+.arc-list { list-style: none; padding: 0; margin: 0; }
+.arc-row { display: grid; grid-template-columns: 7.5rem 1fr auto; gap: var(--sp-2); align-items: baseline; padding: .6rem 0; border-bottom: 1px solid var(--border); }
+.arc-row time { font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: .07em; color: var(--faint); font-variant-numeric: tabular-nums; }
+.arc-row a { font-family: var(--serif); font-size: var(--fs-md); color: var(--ink); }
+.arc-row a:hover { color: var(--blue); }
+.arc-tag { font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: .04em; color: var(--orange-ink); white-space: nowrap; }
+.static-page { max-width: var(--measure); margin-bottom: var(--sp-5); }
+@media (max-width: 640px) { .arc-row { grid-template-columns: 1fr; gap: .15rem; } .arc-tag { justify-self: start; } }
+
 /* Print */
 @media print {
   .site-header, .site-footer, .cta-band, .progress, .toolbar, .to-top { display: none; }

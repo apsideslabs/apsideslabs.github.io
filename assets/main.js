@@ -206,6 +206,15 @@
     });
   });
 
+  /* ---- Masthead: today's date ---- */
+  var todayEl = document.querySelector("[data-today]");
+  if (todayEl) {
+    var DOW = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var MON = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var now = new Date();
+    todayEl.textContent = DOW[now.getDay()] + ", " + now.getDate() + " " + MON[now.getMonth()] + " " + now.getFullYear();
+  }
+
   function copyText(text, done) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(function () { done("Link copied"); },
