@@ -29,25 +29,30 @@
 
   --ease: cubic-bezier(.22,.61,.36,1);
 
-  /* Soft-white paper + ink (light — DEFAULT) */
-  --paper:   #f7f3ea;
-  --desk:    #eee8da;
-  --card:    #ffffff;
-  --inset:   #f3f2ee;
-  --ink:     #1a1a1a;
-  --ink-2:   #3a3a38;
-  --muted:   #6f6d68;
-  --faint:   #9a9791;
-  --border:  #e9e7e1;
-  --border-2:#dcd9d1;
+  /* Grapheme palette: warm ivory ground, charcoal ink, burnt orange + vermilion accents */
+  --paper:   #FAF8F3;
+  --desk:    #F2EDE3;
+  --card:    #FFFFFF;
+  --inset:   #F5F1E8;
+  --ink:     #17191D;
+  --ink-2:   #34373D;
+  --muted:   #85827D;
+  --faint:   #A8A49E;
+  --border:  #E8E3D9;
+  --border-2:#DAD4C8;
 
-  --blue:      #2563eb;
-  --blue-ink:  #1d4ed8;
-  --blue-soft: #e9efff;
+  --accent:      #F45B16;
+  --accent-ink:  #E52B20;
+  --accent-soft: #FCE9DE;
 
-  --orange:      #ea580c;
-  --orange-ink:  #c2410c;
-  --orange-soft: #fdece1;
+  /* legacy aliases mapped onto the accent so every existing rule inherits the palette */
+  --blue:      #F45B16;
+  --blue-ink:  #E52B20;
+  --blue-soft: #FCE9DE;
+
+  --orange:      #F45B16;
+  --orange-ink:  #E52B20;
+  --orange-soft: #FCE9DE;
 
   --shadow-sm: none;
   --shadow-md: 0 1px 2px rgba(20,20,20,.05);
@@ -57,23 +62,27 @@
 }
 
 [data-theme="dark"] {
-  --paper:   #131316;
-  --card:    #1a1a1e;
-  --inset:   #202024;
-  --ink:     #f2f1ee;
-  --ink-2:   #cfcecb;
-  --muted:   #9a9893;
-  --faint:   #74726d;
-  --border:  #2a2a2f;
-  --border-2:#38383f;
+  --paper:   #17191D;
+  --card:    #1E2126;
+  --inset:   #24272D;
+  --ink:     #FAF8F3;
+  --ink-2:   #D9D5CC;
+  --muted:   #85827D;
+  --faint:   #6B6863;
+  --border:  #2C3037;
+  --border-2:#3A3F47;
 
-  --blue:      #7ea6ff;
-  --blue-ink:  #a6c0ff;
-  --blue-soft: #1a2233;
+  --accent:      #F45B16;
+  --accent-ink:  #FF7A3D;
+  --accent-soft: #33211A;
 
-  --orange:      #ff8a4c;
-  --orange-ink:  #ffa471;
-  --orange-soft: #33211a;
+  --blue:      #F45B16;
+  --blue-ink:  #FF7A3D;
+  --blue-soft: #33211A;
+
+  --orange:      #F45B16;
+  --orange-ink:  #FF7A3D;
+  --orange-soft: #33211A;
 
   --shadow-sm: 0 1px 2px rgba(0,0,0,.4);
   --shadow-md: 0 1px 3px rgba(0,0,0,.4), 0 12px 28px rgba(0,0,0,.35);
