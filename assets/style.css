@@ -597,6 +597,13 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 .static-page { max-width: var(--measure); margin-bottom: var(--sp-5); }
 @media (max-width: 640px) { .arc-row { grid-template-columns: 1fr; gap: .15rem; } .arc-tag { justify-self: start; } }
 
+
+/* Brand lockup: supplied G monogram beside the supplied wordmark */
+.brand { display: inline-flex; align-items: center; gap: .55rem; }
+.brand-icon { width: 28px; height: 28px; flex: none; display: block; }
+.brand-word { height: 21px; width: auto; flex: none; display: block; }
+.footer-brand .brand-word { height: 19px; }
+
 /* Print */
 @media print {
   .site-header, .site-footer, .cta-band, .progress, .toolbar, .to-top { display: none; }
