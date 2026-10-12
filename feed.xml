@@ -2,79 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grapheme — Blog</title>
-    <link>https://apsideslabs.github.io/</link>
+    <link>https://apsideslabs.github.io/grapheme/</link>
     <description>Field notes from Apsides Labs on AI, engineering and intelligent learning systems.</description>
     <language>en</language>
-    <atom:link href="https://apsideslabs.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://apsideslabs.github.io/grapheme/feed.xml" rel="self" type="application/rss+xml"/>
     <lastBuildDate>Sat, 10 Oct 2026 09:00:00 +0000</lastBuildDate>
     <item>
       <title>When AI agents don't stay in their lane</title>
-      <link>https://apsideslabs.github.io/posts/agents-outside-the-lines.html</link>
-      <guid isPermaLink="true">https://apsideslabs.github.io/posts/agents-outside-the-lines.html</guid>
+      <link>https://apsideslabs.github.io/grapheme/posts/agents-outside-the-lines.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/grapheme/posts/agents-outside-the-lines.html</guid>
       <category>AI safety</category>
       <pubDate>Sat, 10 Oct 2026 09:00:00 +0000</pubDate>
       <description>Anthropic pulled live internet access from its internal evaluations after its agents exploited real websites. What happened, and what every builder of autonomous systems should take from it.</description>
     </item>
     <item>
       <title>The week AI agents became coworkers</title>
-      <link>https://apsideslabs.github.io/posts/agents-at-work.html</link>
-      <guid isPermaLink="true">https://apsideslabs.github.io/posts/agents-at-work.html</guid>
+      <link>https://apsideslabs.github.io/grapheme/posts/agents-at-work.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/grapheme/posts/agents-at-work.html</guid>
       <category>AI</category>
       <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
       <description>Microsoft bills agents by usage, OpenAI ships always-on dots, and Anthropic cuts prices. The shift from assistants to workers is now a budgeting, permissions and accountability problem.</description>
     </item>
     <item>
       <title>Capable AI on CPU-only, constrained hosts</title>
-      <link>https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html</link>
-      <guid isPermaLink="true">https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html</guid>
+      <link>https://apsideslabs.github.io/grapheme/posts/capable-ai-on-constrained-hosts.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/grapheme/posts/capable-ai-on-constrained-hosts.html</guid>
       <category>Engineering</category>
       <pubDate>Wed, 07 Oct 2026 09:00:00 +0000</pubDate>
       <description>You don't need a GPU cluster to run useful models. How we ship voice and language models on CPU-only, constrained hosts.</description>
     </item>
     <item>
       <title>Why offline-first learning still matters</title>
-      <link>https://apsideslabs.github.io/posts/offline-first-learning.html</link>
-      <guid isPermaLink="true">https://apsideslabs.github.io/posts/offline-first-learning.html</guid>
+      <link>https://apsideslabs.github.io/grapheme/posts/offline-first-learning.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/grapheme/posts/offline-first-learning.html</guid>
       <category>Education</category>
       <pubDate>Tue, 06 Oct 2026 09:00:00 +0000</pubDate>
       <description>Most of the world's learners are not on a fast, always-on connection. Designing for the lowest common denominator makes learning software better for everyone.</description>
     </item>
     <item>
       <title>Why CPU-only AI is the right default for learning software</title>
-      <link>https://apsideslabs.github.io/posts/cpu-only-ai-default.html</link>
-      <guid isPermaLink="true">https://apsideslabs.github.io/posts/cpu-only-ai-default.html</guid>
+      <link>https://apsideslabs.github.io/grapheme/posts/cpu-only-ai-default.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/grapheme/posts/cpu-only-ai-default.html</guid>
       <category>Engineering</category>
       <pubDate>5 Oct 2026 09:00:00 +0000</pubDate>
       <description>GPUs are fast and expensive. For the software most learners actually use, a small model on a CPU is the better trade.</description>
     </item>
     <item>
       <title>Building a dictionary for a language the web ignores</title>
-      <link>https://apsideslabs.github.io/posts/dictionary-for-an-ignored-language.html</link>
-      <guid isPermaLink="true">https://apsideslabs.github.io/posts/dictionary-for-an-ignored-language.html</guid>
+      <link>https://apsideslabs.github.io/grapheme/posts/dictionary-for-an-ignored-language.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/grapheme/posts/dictionary-for-an-ignored-language.html</guid>
       <category>Education</category>
       <pubDate>3 Oct 2026 09:00:00 +0000</pubDate>
       <description>348 words, one static page, no backend. What it takes to give a low-resource language a real learning tool.</description>
     </item>
     <item>
       <title>Static sites outlive their frameworks</title>
-      <link>https://apsideslabs.github.io/posts/static-sites-outlive-frameworks.html</link>
-      <guid isPermaLink="true">https://apsideslabs.github.io/posts/static-sites-outlive-frameworks.html</guid>
+      <link>https://apsideslabs.github.io/grapheme/posts/static-sites-outlive-frameworks.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/grapheme/posts/static-sites-outlive-frameworks.html</guid>
       <category>Engineering</category>
       <pubDate>1 Oct 2026 09:00:00 +0000</pubDate>
       <description>We ship plain HTML that runs anywhere and needs no build. Here is why that is a feature, not nostalgia.</description>
     </item>
     <item>
       <title>Evaluating small models honestly</title>
-      <link>https://apsideslabs.github.io/posts/evaluating-small-models.html</link>
-      <guid isPermaLink="true">https://apsideslabs.github.io/posts/evaluating-small-models.html</guid>
+      <link>https://apsideslabs.github.io/grapheme/posts/evaluating-small-models.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/grapheme/posts/evaluating-small-models.html</guid>
       <category>AI</category>
       <pubDate>29 Sep 2026 09:00:00 +0000</pubDate>
       <description>Published benchmarks will not tell you whether a 1B model is good enough for your task. A short, practical method that will.</description>
     </item>
     <item>
       <title>Teaching a script, not just a language</title>
-      <link>https://apsideslabs.github.io/posts/teaching-a-script.html</link>
-      <guid isPermaLink="true">https://apsideslabs.github.io/posts/teaching-a-script.html</guid>
+      <link>https://apsideslabs.github.io/grapheme/posts/teaching-a-script.html</link>
+      <guid isPermaLink="true">https://apsideslabs.github.io/grapheme/posts/teaching-a-script.html</guid>
       <category>Education</category>
       <pubDate>26 Sep 2026 09:00:00 +0000</pubDate>
       <description>Learning Assamese or Bodo means learning a script. What we changed after watching people try.</description>

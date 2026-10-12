@@ -1,4 +1,4 @@
-# Apsides Labs — Blog
+# Grapheme — Blog
 
 A professional, static blog site. **HTML5 + CSS3 + vanilla JavaScript. No frameworks, no build step, no dependencies.**
 
@@ -36,14 +36,14 @@ blog/
 
 ## Deploying to GitHub Pages
 
-1. Create a repository (e.g. `apsideslabs.github.io` for a root site, or any name for a project page).
+1. Create a repository (e.g. `grapheme` for a root site, or any name for a project page).
 2. Upload the **contents** of this `blog/` folder to the repository root.
 3. Settings → Pages → Source: **Deploy from a branch** → Branch: `main` / `(root)` → Save.
 4. Your site is live at `https://<user>.github.io/` (or `https://<user>.github.io/<repo>/`).
 
 ## Changing the site URL
 
-The site uses **relative links** for navigation and assets, so it works at any sub-path automatically. The only thing that is absolute is the canonical/OG/RSS URLs. If your final URL differs from `https://apsideslabs.github.io/`, find and replace that string across:
+The site uses **relative links** for navigation and assets, so it works at any sub-path automatically. The only thing that is absolute is the canonical/OG/RSS URLs. If your final URL differs from `https://apsideslabs.github.io/grapheme/`, find and replace that string across:
 
 - every `<link rel="canonical">`, `og:url`, `og:image`, `twitter:image`
 - the JSON-LD blocks in each page
@@ -65,9 +65,9 @@ Built by **Apsides Labs**. Fonts: Inter, Fraunces and JetBrains Mono (Google Fon
 - **Pagefind** — full-text, client-side search (`/search.html`). Index lives in `pagefind/`. To rebuild after editing posts: run `pagefind --site .` in this folder.
 - **Lenis** — smooth scroll, self-hosted at `assets/vendor/lenis.min.js` (auto-disabled for `prefers-reduced-motion`).
 - **View Transitions API** — native cross-page transitions (progressive; Chromium only).
-- **Giscus** — comments on posts, backed by GitHub Discussions (repo `apsideslabs/apsideslabs.github.io`, category "Announcements"). Install the giscus GitHub App on the repo for it to work.
+- **Giscus** — comments on posts, backed by GitHub Discussions (repo `apsideslabs/grapheme`, category "Announcements"). Install the giscus GitHub App on the repo for it to work.
 - **GoatCounter** — privacy-friendly analytics. Replace `YOUR-CODE` in the `data-goatcounter` attribute with your site code from goatcounter.com.
 
 ## Deploying (already done for you)
 
-The site is published from the `apsideslabs.github.io` repository and served at **https://apsideslabs.github.io/**.
+The site is published from the `grapheme` repository and served at **https://apsideslabs.github.io/grapheme/**.

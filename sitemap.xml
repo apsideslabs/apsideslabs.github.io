@@ -1,106 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://apsideslabs.github.io/</loc>
+    <loc>https://apsideslabs.github.io/grapheme/</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/blog.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/blog.html</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/verify.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/verify.html</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/about.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/about.html</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/posts/agents-outside-the-lines.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/posts/agents-outside-the-lines.html</loc>
     <lastmod>2026-10-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/posts/agents-at-work.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/posts/agents-at-work.html</loc>
     <lastmod>2026-10-08</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/posts/capable-ai-on-constrained-hosts.html</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/posts/offline-first-learning.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/posts/offline-first-learning.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/posts/cpu-only-ai-default.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/posts/cpu-only-ai-default.html</loc>
     <lastmod>2026-10-05</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/posts/dictionary-for-an-ignored-language.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/posts/dictionary-for-an-ignored-language.html</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/posts/static-sites-outlive-frameworks.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/posts/static-sites-outlive-frameworks.html</loc>
     <lastmod>2026-10-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/posts/evaluating-small-models.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/posts/evaluating-small-models.html</loc>
     <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/posts/teaching-a-script.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/posts/teaching-a-script.html</loc>
     <lastmod>2026-09-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/tags/ai.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/tags/ai.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/tags/ai-safety.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/tags/ai-safety.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/tags/engineering.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/tags/engineering.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/tags/education.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/tags/education.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/archive.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/archive.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/contact.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/contact.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://apsideslabs.github.io/privacy.html</loc>
+    <loc>https://apsideslabs.github.io/grapheme/privacy.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.3</priority>
   </url>
