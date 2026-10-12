@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Capable AI on CPU-only, constrained hosts — Grapheme</title>
 <meta name="description" content="You don't need a GPU cluster to run useful models. How we ship voice and language models on CPU-only, constrained hosts — and why the small-model trend matters.">
-<link rel="canonical" href="https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html">
+<link rel="canonical" href="https://apsideslabs.github.io/grapheme/posts/capable-ai-on-constrained-hosts.html">
 <meta name="theme-color" content="#FAF8F3">
 <meta name="author" content="Apsides Labs">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -15,22 +15,22 @@
 <meta property="og:site_name" content="Grapheme">
 <meta property="og:title" content="Capable AI on CPU-only, constrained hosts">
 <meta property="og:description" content="How we run useful models on the hardware people already have.">
-<meta property="og:url" content="https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html">
-<meta property="og:image" content="https://apsideslabs.github.io/assets/og/capable-ai-on-constrained-hosts.png">
+<meta property="og:url" content="https://apsideslabs.github.io/grapheme/posts/capable-ai-on-constrained-hosts.html">
+<meta property="og:image" content="https://apsideslabs.github.io/grapheme/assets/og/capable-ai-on-constrained-hosts.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Capable AI on CPU-only, constrained hosts">
 <meta name="twitter:description" content="How we run useful models on the hardware people already have.">
-<meta name="twitter:image" content="https://apsideslabs.github.io/assets/og/capable-ai-on-constrained-hosts.png">
+<meta name="twitter:image" content="https://apsideslabs.github.io/grapheme/assets/og/capable-ai-on-constrained-hosts.png">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/style.css?v=4">
 <script>
   (function(){document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"Capable AI on CPU-only, constrained hosts","description":"How we run useful models on the hardware people already have.","datePublished":"2026-10-07","dateModified":"2026-10-07","articleSection":"Engineering","wordCount":1020,"author":{"@type":"Organization","name":"Apsides Labs","url":"https://apsideslabs.github.io/"},"publisher":{"@type":"Organization","name":"Apsides Labs","logo":{"@type":"ImageObject","url":"https://apsideslabs.github.io/assets/favicon.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html"}}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Capable AI on CPU-only, constrained hosts","description":"How we run useful models on the hardware people already have.","datePublished":"2026-10-07","dateModified":"2026-10-07","articleSection":"Engineering","wordCount":1020,"author":{"@type":"Organization","name":"Apsides Labs","url":"https://apsideslabs.github.io/grapheme/"},"publisher":{"@type":"Organization","name":"Apsides Labs","logo":{"@type":"ImageObject","url":"https://apsideslabs.github.io/grapheme/assets/favicon.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://apsideslabs.github.io/grapheme/posts/capable-ai-on-constrained-hosts.html"}}
 </script>
 </head>
 <body>
@@ -39,7 +39,7 @@
 
 <header class="site-header" data-pagefind-ignore>
   <div class="wrap">
-    <a class="brand" href="../index.html"><img class="brand-icon" src="../assets/icon.svg" width="30" height="30" alt=""><img class="brand-word" src="../assets/logo.svg" width="1581" height="368" alt="Grapheme"></a>
+    <a class="brand" href="../index.html"><img class="brand-icon" src="../assets/icon.svg?v=4" width="30" height="30" alt=""><img class="brand-word" src="../assets/logo.svg?v=4" width="1581" height="368" alt="Grapheme"></a>
     <nav class="nav" data-nav aria-label="Primary">
       <a href="../index.html">Home</a>
       <a href="../blog.html">Blog</a>
@@ -153,7 +153,7 @@
         <div class="share-side">
           <div class="share-btns">
             <button class="share-btn share-btn-primary" type="button" data-native-share
-                    data-url="https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html" data-title="Capable AI on CPU-only, constrained hosts"
+                    data-url="https://apsideslabs.github.io/grapheme/posts/capable-ai-on-constrained-hosts.html" data-title="Capable AI on CPU-only, constrained hosts"
                     data-image="../assets/share/capable-ai-on-constrained-hosts.png" data-filename="grapheme-capable-ai-on-constrained-hosts.png">Share</button>
             <a class="share-btn" href="https://twitter.com/intent/tweet?text=Capable%20AI%20on%20CPU-only%2C%20constrained%20hosts&amp;url=https%3A%2F%2Fapsideslabs.github.io%2Fposts%2Fcapable-ai-on-constrained-hosts.html" target="_blank" rel="noopener">X</a>
             <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fapsideslabs.github.io%2Fposts%2Fcapable-ai-on-constrained-hosts.html" target="_blank" rel="noopener">LinkedIn</a>
@@ -161,7 +161,7 @@
             <a class="share-btn" href="https://t.me/share/url?url=https%3A%2F%2Fapsideslabs.github.io%2Fposts%2Fcapable-ai-on-constrained-hosts.html&amp;text=Capable%20AI%20on%20CPU-only%2C%20constrained%20hosts" target="_blank" rel="noopener">Telegram</a>
             <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fapsideslabs.github.io%2Fposts%2Fcapable-ai-on-constrained-hosts.html" target="_blank" rel="noopener">Facebook</a>
             <a class="share-btn" href="mailto:?subject=Capable%20AI%20on%20CPU-only%2C%20constrained%20hosts&amp;body=Capable%20AI%20on%20CPU-only%2C%20constrained%20hosts%20https%3A%2F%2Fapsideslabs.github.io%2Fposts%2Fcapable-ai-on-constrained-hosts.html">Email</a>
-            <button class="share-btn" type="button" data-copy-link="https://apsideslabs.github.io/posts/capable-ai-on-constrained-hosts.html">Copy link</button>
+            <button class="share-btn" type="button" data-copy-link="https://apsideslabs.github.io/grapheme/posts/capable-ai-on-constrained-hosts.html">Copy link</button>
             <a class="share-btn" href="../assets/share/capable-ai-on-constrained-hosts.png" download="grapheme-capable-ai-on-constrained-hosts.png">Download card</a>
           </div>
           <p class="share-note"><strong>Share</strong> opens your device&rsquo;s share sheet and attaches the card image wherever that is supported &mdash; so the post travels, not just the link. The buttons below open a specific platform.</p>
